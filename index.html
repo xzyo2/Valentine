@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Valentine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen" class="screen">
+        <div class="loader"></div>
+        <h2 id="loading-text">Loading love... 0%</h2>
+    </div>
+
+    <div id="error-screen" class="screen hidden">
+        <svg fill="#d32f2f" width="80px" height="80px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 20px;">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35zM7.5 5C5.57 5 4 6.57 4 8.5c0 2.8 2.81 5.4 7.23 9.05l.77.64.77-.64C17.19 13.9 20 11.3 20 8.5 20 6.57 18.43 5 16.5 5c-1.54 0-3.04.99-3.56 2.36h-1.87C10.54 5.99 9.04 5 7.5 5z"/>
+            <path d="M12.5 13.5l-2.5-3.5h2l1-3-3.5 4.5h2z" fill="#d32f2f"/>
+        </svg>
+        <h2>Something went wrong. Try again later.</h2>
+    </div>
+
+    <div id="main-screen" class="screen hidden">
+        <img id="main-gif" src="" alt="Bubu and Dudu">
+        <h1 id="main-text">Will you be my Valentine, Yanna?</h1>
+        <div class="button-group" id="btn-container">
+            <button id="btn-yes">Yes</button>
+            <button id="btn-no">No</button>
+        </div>
+    </div>
+
+    <div id="particles"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
